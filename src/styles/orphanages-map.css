@@ -1,61 +1,95 @@
 #page-map {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
 #page-map .leaflet-container {
-    z-index: 9;
+  z-index: 9;
 }
 
 #page-map .create-orphanage {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    background-color: #14C3D6;
-    border-radius: 20px;
-    transition: background 0.2s;
-    z-index: 10;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #14c3d6;
+  border-radius: 20px;
+  transition: background 0.2s;
+  z-index: 10;
 }
 
 #page-map .create-orphanage:hover {
-    background-color: #17d6eb;
+  background-color: #17d6eb;
 }
 
 #page-map aside {
-    width: 440px;
-    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 440px;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #page-map aside header h2 {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 42px;
-    margin-top: 64px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 42px;
+  margin-top: 64px;
 }
 
 #page-map aside header p {
-    line-height: 28px;
-    margin-top: 24px;
+  line-height: 28px;
+  margin-top: 24px;
 }
 
 #page-map aside footer {
-    display: flex;
-    flex-direction: column;
-    line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
 }
 
 #page-map aside footer strong {
-    font-weight: 800;
+  font-weight: 800;
 }
 
+#page-map .map-popup .leaflet-popup-content-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+#page-map .map-popup .leaflet-popup-content {
+  color: #0089a5;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 12px;
+  margin-left: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-map .map-popup .leaflet-popup-content a {
+  width: 40px;
+  height: 40px;
+  background-color: #15c3d6;
+  border-radius: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-map .map-popup .leaflet-popup-tip-container {
+  display: none;
+}
